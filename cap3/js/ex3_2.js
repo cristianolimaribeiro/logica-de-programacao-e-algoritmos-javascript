@@ -22,10 +22,18 @@ function calcularPeso() {
         outValidacao.style.color = "red";
         inAltura.focus();
     }
-    if (masculino) {
+    /*   if (masculino) {
         var peso = 22 * (altura * altura);
     } else {
         var peso = 21 * (altura * altura);
+    } */
+
+    // Refatoração usando Math.pow()
+
+    if (masculino) {
+        var peso = 22 * Math.pow(altura , 2)
+    } else {
+        var peso = 21 * Math.pow(altura , 2)
     }
     outResposta.textContent = nome + " seu peso ideal é " + peso.toFixed(3) + " Kg ";
     outValidacao.textContent = "";
