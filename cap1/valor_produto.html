@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var valorProduto = Number(prompt("Valor do Produto:"));
+    var vezesPrazo = Number(prompt("Quantidade de Vezes: "));
+    var porcentagem = (10*100) /valorProduto;
+    var valorVista = valorProduto - porcentagem;
+    var valorPrazo = valorProduto / vezesPrazo;
+
+    alert("À Vista R$ " + valorVista.toFixed(2));
+    alert('Ou ' + vezesPrazo + ' de R$:'+ valorPrazo.toFixed(2));
+    
+
+</script>
+</body>
+</html>

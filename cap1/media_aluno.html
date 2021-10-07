@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nota1 = Number(prompt("Primeira Nota do Aluno: "));
+        var nota2 = Number(prompt("Segunda Nota do Aluno: "));
+        var nota3 = Number(prompt("Terceira Nota do Aluno: "));
+        var nota4 = Number(prompt("Quarta Nota do Aluno: "));
+        var media = (nota1 + nota2 + nota3 + nota4 ) / 4;
+
+        alert("A média das notas do Aluno é " + media.toFixed(1))
+
+        if(media >= 7 && media<= 7.9){
+            alert("Aluno Aprovado");
+        }else if (media >=8 && media<= 8.9) 
+        {
+            alert("Aluno foi muito bem")
+        }else if(media >=9){
+            alert("Aluno tirou onda demais")
+        }else{
+            alert("Aluno Reprovado")
+        }
+
+    </script>
+</body>
+</html>
