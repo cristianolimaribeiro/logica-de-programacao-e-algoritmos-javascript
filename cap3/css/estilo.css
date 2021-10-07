@@ -1,0 +1,12 @@
+body{
+    font-family: Poppins, sans-serif;
+}
+img {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin-right: 30px;
+}
+h1 {
+    border-bottom-style: inset;
+}
