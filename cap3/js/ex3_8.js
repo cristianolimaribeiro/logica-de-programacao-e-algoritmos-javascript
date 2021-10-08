@@ -9,6 +9,9 @@ function radar() {
     if (inVelocidadePermitida.value == '' || isNaN(velocidadePermitida)) {
         outMensagem.textContent = 'Calibre com a Velocidade'
         outMensagem.style.color = 'red';
+        outSituacao.textContent = '';
+        outVelocidadeObtida.textContent = ''
+        inVelocidadePermitida.focus()
     } else {
 
         var velocidade = Math.floor(Math.random() * 100) + 50;
@@ -19,7 +22,7 @@ function radar() {
         outVelocidadeObtida.textContent = 'Velocidade: ' + velocidade + ' KM/h '
 
 
-        if (outMensagem.textContent != '') {
+        if (inVelocidadePermitida.value != '') {
             outMensagem.textContent = '';
         }
         if (velocidade > velocidadeMenor && velocidade < velocidadeMaior) {
