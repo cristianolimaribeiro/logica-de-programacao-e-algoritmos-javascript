@@ -12,3 +12,15 @@ img {
 h1, h2 {
     border-bottom-style: inset;
 }
+p#outNotaCinquenta{
+    position: absolute;
+    right: 742px;
+}
+p#outNotaDez{
+    position: fixed;
+    right: 743px;
+}
+.nota{
+   width: 100px; 
+   height: 50px;
+}

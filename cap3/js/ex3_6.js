@@ -26,13 +26,13 @@ function saque() {
     var notasDez = Math.floor(resto / 10);
 
     if (notasCem > 0){
-        outNotasCem.textContent = 'Notas de R$ 100.00: '+ notasCem;
+        outNotasCem.innerHTML = "<img class='nota' src='./img/100.jpg'>"+ 'Notas de R$ 100.00: '+ notasCem; 
     }
     if(notasCinquenta > 0){
-        outNotasCinquenta.textContent = 'Notas de R$ 50.00: ' + notasCinquenta;
+        outNotasCinquenta.innerHTML = "<img class='nota' src='./img/50.jpg'>"+'Notas de R$ 50.00: ' + notasCinquenta;
     }
     if (notasDez > 0){
-        outNotasDez.textContent = 'Notas de R$ 10.00: '+ notasDez;
+        outNotasDez.innerHTML = "<img class='nota' src='./img/10.jpg'>" + 'Notas de R$ 10.00: '+ notasDez;
     }
 }
 
